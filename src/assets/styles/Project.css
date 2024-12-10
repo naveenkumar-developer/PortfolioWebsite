@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.project{
+    scroll-margin-top: 80px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.titleAndVAbtn_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleAndVAbtn_container h2{
+    font-size: 1rem;
+}
+.titleAndVAbtn_container .viewallBtn_project{
+    background-color: #ff0000;
+    outline: none;
+    border: 2px solid #ff0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.viewallBtn_project a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #fff;
+    display: block;
+}
+
+.projectCards_container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media all and (min-width: 768px) {
+    .titleAndVAbtn_container{
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .project h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

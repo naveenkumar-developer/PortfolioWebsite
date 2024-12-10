@@ -1,0 +1,138 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* MOBILE STYLES  */
+
+/* SECTION  */
+.experience {
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* TITLE  */
+
+.experienceTitle {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* OVERALL CARDS CONTAINER  */
+
+.experienceCards {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* column-gap: 20px; */
+}
+
+/* LEFT CARD  */
+.left_card {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.left_card::after,
+.left_card::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: conic-gradient(red,orange,yellow, green, blue, indigo, violet);
+    z-index: -1;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.left_card::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
+
+.left_card h3 {
+    text-align: center;
+    font-size: 0.7rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.right_card p {
+    padding: 20px;
+    text-indent: 30px;
+    font-size: 0.7rem;
+}
+/* LARGE MOBILE OR TABLETS  */
+@media all and (min-width: 768px) {
+/* SECTION  */
+.experience {
+    width: 85%;
+    margin-inline: auto;
+}
+/* TITLE  */
+
+.experienceTitle {
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* OVERALL CARDS CONTAINER  */
+
+.experienceCards {
+    justify-content: center;
+    column-gap: 30px;
+}
+/* LEFT CARD  */
+.left_card {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.left_card h3 {
+    font-size: 1rem;
+}
+
+.right_card p {
+    font-size: 1rem;
+}
+
+}
+
+/* LARGE SCREEN  */
+@media all and (min-width: 1024px) {
+/* SECTION  */
+.experience {
+    width: 70%;
+}
+/* TITLE  */
+
+.experienceTitle {
+    font-size: 2rem;
+}
+/* LEFT CARD  */
+.left_card {
+    width: 150px;
+    height: 150px;
+}
+.left_card h3 {
+    font-size: 1.5rem;
+}
+
+.right_card p {
+    font-size: 1.5rem;
+}
+}
