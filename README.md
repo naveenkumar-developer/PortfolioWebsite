@@ -17,6 +17,6 @@ Welcome to my portfolio website! This project showcases my work as a frontend de
 
 
 ## Preview 📸
-
+Open the project click [here](https://naveenkumar-developer.github.io/PortfolioWebsite/main)
 ![portfolio img](./src/IMAGE/portfolioImg.png)
 
